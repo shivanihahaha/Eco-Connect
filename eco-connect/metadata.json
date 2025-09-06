@@ -1,0 +1,8 @@
+{
+  "name": "Eco Connect",
+  "description": "Eco Connect is a web application that connects waste producers, collectors (middlemen), and buyers to facilitate a circular economy. Producers can list their waste, collectors can find and manage pickups, and buyers can purchase processed materials from a marketplace.",
+  "requestFramePermissions": [
+    "camera"
+  ],
+  "prompt": "The application name is 'Eco Connect'. Update all instances of 'Circular Economy Connector' to 'Eco Connect'."
+}

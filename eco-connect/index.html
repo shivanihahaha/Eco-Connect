@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Eco Connect</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="" />
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              primary: {
+                DEFAULT: '#4f46e5', // indigo-600
+                dark: '#4338ca',    // indigo-700
+                light: '#e0e7ff',   // indigo-200
+                foreground: '#ffffff'
+              },
+              producer: {
+                DEFAULT: '#3b82f6', // blue-500
+                dark: '#2563eb',    // blue-600
+                light: '#dbeafe',   // blue-100
+                text: '#1d4ed8'     // blue-700
+              },
+              middleman: {
+                DEFAULT: '#f59e0b', // amber-500
+                dark: '#d97706',    // amber-600
+                light: '#fef3c7',   // amber-100
+                text: '#b45309'     // amber-700
+              },
+              buyer: {
+                DEFAULT: '#10b981', // emerald-500
+                dark: '#059669',    // emerald-600
+                light: '#d1fae5',   // emerald-100
+                text: '#047857'     // emerald-700
+              },
+              slate: {
+                 50: '#f8fafc',
+                100: '#f1f5f9',
+                200: '#e2e8f0',
+                300: '#cbd5e1',
+                400: '#94a3b8',
+                500: '#64748b',
+                600: '#475569',
+                700: '#334155',
+                800: '#1e293b',
+                900: '#0f172a',
+              }
+            },
+            keyframes: {
+              'fade-in': {
+                '0%': { opacity: '0', transform: 'translateY(-10px)' },
+                '100%': { opacity: '1', transform: 'translateY(0)' },
+              },
+            },
+            animation: {
+                'pulse-fast': 'pulse 1.5s cubic-bezier(0.4, 0, 0.6, 1) infinite',
+                'fade-in': 'fade-in 0.4s ease-out forwards',
+            }
+          }
+        }
+      }
+    </script>
+  <script type="importmap">
+{
+  "imports": {
+    "react": "https://esm.sh/react@^18.3.1",
+    "react/": "https://esm.sh/react@^18.3.1/",
+    "react-dom": "https://esm.sh/react-dom@^18.3.1",
+    "react-dom/": "https://esm.sh/react-dom@^18.3.1/",
+    "leaflet": "https://esm.sh/leaflet@1.9.4",
+    "react-leaflet": "https://esm.sh/react-leaflet@4.2.1"
+  }
+}
+</script>
+<style>
+  body {
+    background-color: #f1f5f9; /* slate-100 */
+    color: #1e293b; /* slate-800 */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+</style>
+<link rel="stylesheet" href="/index.css">
+</head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/index.tsx"></script>
+  </body>
+</html>
